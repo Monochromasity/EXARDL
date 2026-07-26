@@ -20,12 +20,12 @@ async function printlist() {
     const ranktxt = document.createTextNode("#".concat(i+1));
     rank.appendChild(ranktxt);
     rank.className = "rank";
-    level.appendChild(rank);
+    item.appendChild(rank);
     // Level name
     const name = document.createElement("p");
     const nametxt = document.createTextNode(list[i]["level"]);
     name.appendChild(nametxt);
     name.className = "name";
-    level.appendChild(name);
+    item.appendChild(name);
     htmllist.appendChild(level);
   }
