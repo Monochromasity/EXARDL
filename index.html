@@ -7,12 +7,18 @@
       font-family: "Raleway", sans-serif;
       padding: 10px 40px;
     }
-    a {
+    a.hlink {
       text-decoration: none;
+      font-size: 30px;
+    }
+    a:hover {
+      background-color: #333333;
     }
     .header {
       border-bottom: 2px solid #424242;
       padding-bottom: 20px;
+      display: flex;
+      align-items: center;
     }
     .logo {
       font-size: 40px;
@@ -35,8 +41,8 @@
   <body>
     <div class="header">
       <b class="logo">EXARDL</b>
-      <a href="/" class="listlink">List</a>
-      <a href="/leaderboard" class="leadlink">Leaderboard</a>
+      <a href="/" class="hlink">List</a>
+      <a href="/leaderboard" class="hlink">Leaderboard</a>
     </div>
     <div class="main">
       <div class="list">List</div>
