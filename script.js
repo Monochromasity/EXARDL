@@ -1,6 +1,6 @@
 async function fetchlist() {
   try {
-    const response = await fetch("https://raw.githubusercontent.com/Monochromasity/EXARDL/main/list.json");
+    const response = await fetch("https://raw.githubusercontent.com/Monochromasity/EXARDL/refs/heads/main/list.json");
     const list = await response.json();
     return list;
   } catch (error) {
