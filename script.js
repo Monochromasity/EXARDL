@@ -27,5 +27,5 @@ async function printlist() {
     name.appendChild(nametxt);
     name.className = "name";
     item.appendChild(name);
-    htmllist.appendChild(level);
+    htmllist.appendChild(item);
   }
