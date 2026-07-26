@@ -29,3 +29,6 @@ async function printlist() {
     item.appendChild(name);
     htmllist.appendChild(item);
   }
+}
+
+printlist();
