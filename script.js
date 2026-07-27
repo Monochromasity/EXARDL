@@ -20,10 +20,10 @@ async function printlist() {
       } else {
         item.className = "item";
       }
-    } else if (i = 0) {
-      window.location.search = "?0";
-      item.className = "item selected";
-    }
+    } //else if (i = 0) {
+      //window.location.search = "?0";
+      //item.className = "item selected";
+    //}
     // Level rank
     const rank = document.createElement("div");
     const ranktxt = document.createTextNode("#".concat(i+1));
