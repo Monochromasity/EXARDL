@@ -20,7 +20,7 @@ async function printlist() {
       } else {
         item.className = "item";
       }
-    } else if (i = 0) {
+    } else if (i == 0) {
       window.location.search = "?0";
       item.className = "item selected";
     }
