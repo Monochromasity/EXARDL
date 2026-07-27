@@ -52,6 +52,10 @@ a.hlink:hover {
   border-radius: 8px;
   margin-bottom: 15px;
   padding: 10px;
+  transition-duration: 0.4s;
+}
+.item:hover {
+  background-color: #424242;
 }
 .rank {
   margin-right: 40px;
