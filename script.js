@@ -14,7 +14,16 @@ async function printlist() {
   for (i = 0; i < list.length; i++) {
     // Level div
     const item = document.createElement("div");
-    item.className = "item";
+    if (window.location.search != "" && window.location.search != "?") {
+      if (i = window.location.search.substring(1)) {
+        item.className = "item selected";
+      } else {
+        item.className = "item";
+      }
+    } else if (i = 0) {
+      window.location.search = "?0";
+      item.className = "item selected";
+    }
     // Level rank
     const rank = document.createElement("div");
     const ranktxt = document.createTextNode("#".concat(i+1));
