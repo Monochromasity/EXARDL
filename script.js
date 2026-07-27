@@ -15,10 +15,14 @@ async function printlist() {
     // Level div
     const item = document.createElement("div");
     if (window.location.search != "" && window.location.search != "?") {
-      if (i == parseInt(window.location.search.substring(1))) {
+      itemparam = parseInt(window.location.search.substring(1));
+      if (i == itemparam) {
         item.className = "item selected";
-      } else {
+      } else if (itemparam >= 0 && itemparam < list.length) {
         item.className = "item";
+      } else if (i == 0) {
+        window.location.search = "?0";
+        item.className = "item selected";
       }
     } else if (i == 0) {
       window.location.search = "?0";
