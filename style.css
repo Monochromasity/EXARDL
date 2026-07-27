@@ -56,6 +56,10 @@ a.hlink:hover {
 }
 .item:hover {
   background-color: #424242;
+  cursor: pointer;
+}
+.selected {
+  background-color: #424242;
 }
 .rank {
   margin-right: 40px;
