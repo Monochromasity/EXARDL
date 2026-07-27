@@ -39,3 +39,6 @@ a.hlink:hover {
 .level {
   flex: 75%;
 }
+.item {
+  display: flex;
+}
