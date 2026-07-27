@@ -16,13 +16,13 @@ async function printlist() {
     const item = document.createElement("div");
     item.className = "item";
     // Level rank
-    const rank = document.createElement("p");
+    const rank = document.createElement("div");
     const ranktxt = document.createTextNode("#".concat(i+1));
     rank.appendChild(ranktxt);
     rank.className = "rank";
     item.appendChild(rank);
     // Level name
-    const name = document.createElement("p");
+    const name = document.createElement("div");
     const nametxt = document.createTextNode(list[i]["level"]);
     name.appendChild(nametxt);
     name.className = "name";
