@@ -41,4 +41,8 @@ a.hlink:hover {
 }
 .item {
   display: flex;
+  font-size: 36px;
+}
+.rank {
+  margin-right: 40px;
 }
