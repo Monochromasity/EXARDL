@@ -15,17 +15,17 @@ async function printlist() {
     // Level div
     const item = document.createElement("div");
     if (window.location.search != "" && window.location.search != "?") {
-      itemparam = parseInt(window.location.search.substring(1));
+      itemparam = parseInt(window.location.search.substring(1)) - 1;
       if (i == itemparam) {
         item.className = "item selected";
-      } else if (itemparam >= 0 && itemparam < list.length) {
+      } else if (itemparam > 0 && itemparam <= list.length) {
         item.className = "item";
       } else if (i == 0) {
-        window.location.search = "?0";
+        window.location.search = "?1";
         item.className = "item selected";
       }
     } else if (i == 0) {
-      window.location.search = "?0";
+      window.location.search = "?1";
       item.className = "item selected";
     }
     // Level rank
