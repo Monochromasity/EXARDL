@@ -55,4 +55,8 @@ a.hlink:hover {
 .rank {
   margin-right: 40px;
   margin-left: 20px;
+  display: inline-block;
+}
+.name {
+  display: inline-block;
 }
