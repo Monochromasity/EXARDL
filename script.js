@@ -18,7 +18,7 @@ async function printlist() {
       itemparam = parseInt(window.location.search.substring(1)) - 1;
       if (i == itemparam) {
         item.className = "item selected";
-      } else if (itemparam > 0 && itemparam <= list.length) {
+      } else if (itemparam >= 0 && itemparam < list.length) {
         item.className = "item";
       } else if (i == 0) {
         window.location.search = "?1";
