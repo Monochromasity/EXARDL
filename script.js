@@ -29,10 +29,10 @@ async function printlist() {
       item.className = "item selected";
     }
     item.onclick = function() {
-      if (document.getElementById(i.toString()).className != "item selected") {
+      if (document.getElementById(this.id).className != "item selected") {
         document.getElementById((parseInt(window.location.search.substring(1)) - 1).toString()).className = "item";
-        document.getElementById(i.toString()).className = "item selected";
-        window.location.search = "?" + (i+1).toString();
+        document.getElementById(this.id).className = "item selected";
+        window.location.search = "?" + (parseInt(this.id)+1).toString();
       }
     };
     item.id = i;
