@@ -28,6 +28,14 @@ async function printlist() {
       window.location.search = "?1";
       item.className = "item selected";
     }
+    item.onclick = function() {
+      if (document.getElementById(i.toString()).className != "item selected") {
+        document.getElementById((parseInt(window.location.search.substring(1)) - 1).toString()).className = "item";
+        document.getElementById(i.toString()).className = "item selected";
+        window.location.search = "?" + (i+1).toString();
+      }
+    };
+    item.id = i;
     // Level rank
     const rank = document.createElement("div");
     const ranktxt = document.createTextNode("#".concat(i+1));
