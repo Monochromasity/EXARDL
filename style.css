@@ -46,7 +46,6 @@ a.hlink:hover {
   padding: 10px;
 }
 .item {
-  display: flex;
   font-size: 26px;
   background-color: #292929;
   border-radius: 8px;
