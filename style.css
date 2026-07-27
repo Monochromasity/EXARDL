@@ -47,6 +47,8 @@ a.hlink:hover {
   display: flex;
   font-size: 26px;
   background-color: #292929;
+  border-radius: 8px;
+  margin-bottom: 15px;
 }
 .rank {
   margin-right: 40px;
