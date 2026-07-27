@@ -35,13 +35,18 @@ a.hlink:hover {
 }
 .list {
   flex: 25%;
+  background-color: #222222;
+  border-radius: 8px;
 }
 .level {
   flex: 75%;
+  background-color: #222222;
+  border-radius: 8px;
 }
 .item {
   display: flex;
   font-size: 26px;
+  background-color: #292929;
 }
 .rank {
   margin-right: 40px;
