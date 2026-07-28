@@ -93,6 +93,9 @@ a.hlink:hover {
   padding: 10px;
 }
 .video {
-  padding: 20px;
-  border: none;
+  margin: 20px;
+  border: hidden;
+  border-radius: 8px;
+  background-color: #1a1a1a;
+  font-size: 20px;
 }
