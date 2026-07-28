@@ -51,16 +51,22 @@ async function leveldetails(inputlevel) {
   detailsdiv.appendChild(cpv);
   // Level description
   const desc = document.createElement("div");
-  const desctxt = document.createTextNode(inputlevel["description"]);
+  const desctxt = document.createTextNode(inputlevel["description"] ?? "No description was provided for this level yet.");
   desc.appendChild(desctxt);
   desc.className = "desc";
   detailsdiv.appendChild(desc);
   // Video iframe
   // <iframe width="560" height="315" src="https://www.youtube.com/embed/MM7zFyFqD8A?si=JmUGHUIf9_PccYe0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-  const video = document.createElement("iframe");
-  video.width = "560";
-  video.height = "315";
-  video.src = "https://www.youtube.com/embed/" + inputlevel["video"];
+  if (inputlevel["video"] != undefined) {
+    const video = document.createElement("iframe");
+    video.width = "560";
+    video.height = "315";
+    video.src = "https://www.youtube.com/embed/" + inputlevel["video"];
+  } else {
+    const video = document.createElement("div");
+    const videotxt = document.createTextNode("No video was found for this level.");
+    video.appendChild(videotxt);
+  }
   video.className = "video";
   recordsdiv.appendChild(video);
   lowerdiv.appendChild(detailsdiv);
