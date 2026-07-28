@@ -49,6 +49,11 @@ async function leveldetails(inputlevel) {
   cpv.appendChild(verifier);
   cpv.className = "cpvlabel";
   detailsdiv.appendChild(cpv);
+  // Level description
+  const desc = document.createElement("div");
+  const desctxt = document.createTextNode(inputlevel["description"]);
+  desc.appendChild(desctxt);
+  detailsdiv.appendChild(desc);
   // Video iframe
   // <iframe width="560" height="315" src="https://www.youtube.com/embed/MM7zFyFqD8A?si=JmUGHUIf9_PccYe0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   const video = document.createElement("iframe");
