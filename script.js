@@ -10,15 +10,36 @@ async function fetchlist() {
   }
 }
 
-async function leveldetails(inputname) {
+async function leveldetails(inputlevel) {
   // Get level div
   const leveldiv = document.getElementById("level");
   // Level name in level div
   const levelname = document.createElement("div");
-  const levelnametxt = document.createTextNode(inputname);
+  const levelnametxt = document.createTextNode(inputlevel["level"]);
   levelname.appendChild(levelnametxt);
   levelname.className = "levelname";
   leveldiv.appendChild(levelname);
+  // Level creators, publisher, and verifier
+  const cpv = document.createElement("div");
+  const creators = document.createElement("b");
+  const creatorstxt = document.createTextNode(inputlevel["creators"]);
+  creators.appendChild(creatorstxt);
+  const publisher = document.createElement("b");
+  const publishertxt = document.createTextNode(inputlevel["publisher"]);
+  publisher.appendChild(publishertxt);
+  const verifier = document.createElement("b");
+  const verifiertxt = document.createTextNode(inputlevel["verifier"]);
+  verifier.appendChild(verifiertxt);
+  const creatorlabel = document.createTextNode("Created by ");
+  const publisherlabel = document.createTextNode(", published by ");
+  const verifierlabel = document.createTextNode(", verified by ");
+  cpv.appendChild(creatorlabel);
+  cpv.appendChild(creators);
+  cpv.appendChild(publisherlabel);
+  cpv.appendChild(publisher);
+  cpv.appendChild(verifierlabel);
+  cpv.appendChild(verifier);
+  leveldiv.appendChild(cpv);
 }
 
 async function printlist() {
@@ -69,7 +90,7 @@ async function printlist() {
     htmllist.appendChild(item);
     // If this level is selected
     if (item.className == "item selected") {
-      await leveldetails(list[i]["level"]);
+      await leveldetails(list[i]);
     }
   }
 }
