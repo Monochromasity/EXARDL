@@ -20,17 +20,23 @@ async function printlist() {
       for (j = 0; j < list.length; j++) {
         allids.concat(list[j]["id"]);
       }
+      console.log(list[i]["id"]);
+      console.log(itemparam);
       if (list[i]["id"] == itemparam) {
         item.className = "item selected";
+        console.log("equals");
       } else if (allids.includes(itemparam)) {
         item.className = "item";
+        console.log("includes");
       } else if (i == 0) {
         window.location.search = "?" + list[0]["id"].toString();
         item.className = "item selected";
+        console.log("i is 0");
       }
     } else if (i == 0) {
       window.location.search = "?" + list[0]["id"].toString();
       item.className = "item selected";
+      console.log("is nothing, i is 0");
     }
     item.onclick = function() {
       if (document.getElementById(this.id).className != "item selected") {
