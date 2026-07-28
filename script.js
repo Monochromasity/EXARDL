@@ -19,6 +19,9 @@ async function leveldetails(inputlevel) {
   levelname.appendChild(levelnametxt);
   levelname.className = "levelname";
   leveldiv.appendChild(levelname);
+  // Lower div
+  const lowerdiv = document.createElement("div");
+  lowerdiv.className = "lowerdiv";
   // Details div
   const detailsdiv = document.createElement("div");
   detailsdiv.className = "detailsdiv";
@@ -47,8 +50,9 @@ async function leveldetails(inputlevel) {
   cpv.appendChild(verifier);
   cpv.className = "cpvlabel";
   detailsdiv.appendChild(cpv);
-  leveldiv.appendChild(detailsdiv);
-  leveldiv.appendChild(recordsdiv);
+  lowerdiv.appendChild(detailsdiv);
+  lowerdiv.appendChild(recordsdiv);
+  leveldiv.appendChild(lowerdiv);
 }
 
 async function printlist() {
