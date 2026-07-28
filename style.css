@@ -94,12 +94,14 @@ a.hlink:hover {
   padding: 10px;
 }
 .video {
+  display: flex;
   margin: 20px;
   border: hidden;
   border-radius: 8px;
   background-color: #1a1a1a;
   font-size: 20px;
-  text-align: center;
+  justify-content: center;
+  align-items: center;
   width: 560px;
   height: 315px;
 }
