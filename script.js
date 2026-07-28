@@ -15,7 +15,7 @@ async function printlist() {
   for (i = 0; i < list.length; i++) {
     allids.concat(list[i]["id"]);
   }
-  console.log(allids);
+  console.log(allids.toString());
   itemparam = parseInt(window.location.search.substring(1));
   console.log(itemparam);
   for (i = 0; i < list.length; i++) {
