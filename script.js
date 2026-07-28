@@ -53,6 +53,7 @@ async function leveldetails(inputlevel) {
   const desc = document.createElement("div");
   const desctxt = document.createTextNode(inputlevel["description"]);
   desc.appendChild(desctxt);
+  desc.className = "desc";
   detailsdiv.appendChild(desc);
   // Video iframe
   // <iframe width="560" height="315" src="https://www.youtube.com/embed/MM7zFyFqD8A?si=JmUGHUIf9_PccYe0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
