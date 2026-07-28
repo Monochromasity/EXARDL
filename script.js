@@ -62,13 +62,15 @@ async function leveldetails(inputlevel) {
     video.width = "560";
     video.height = "315";
     video.src = "https://www.youtube.com/embed/" + inputlevel["video"];
+    video.className = "video";
+    recordsdiv.appendChild(video);
   } else {
     const video = document.createElement("div");
     const videotxt = document.createTextNode("No video was found for this level.");
     video.appendChild(videotxt);
+    video.className = "video";
+    recordsdiv.appendChild(video);
   }
-  video.className = "video";
-  recordsdiv.appendChild(video);
   lowerdiv.appendChild(detailsdiv);
   lowerdiv.appendChild(recordsdiv);
   leveldiv.appendChild(lowerdiv);
