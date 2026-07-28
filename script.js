@@ -46,9 +46,9 @@ async function printlist() {
       item.className = "item selected";
     }
     item.onclick = async function() {
-      if (document.getElementById(this.id).className != "item selected") {
+      if (this.className != "item selected") {
         document.getElementById(window.location.search.substring(1)).className = "item";
-        document.getElementById(this.id).className = "item selected";
+        this.className = "item selected";
         window.location.search = "?" + this.id;
         await leveldetails(this.lastElementChild.textContent);
       }
@@ -69,7 +69,7 @@ async function printlist() {
     htmllist.appendChild(item);
     // If this level is selected
     if (item.className == "item selected") {
-      await leveldetails();
+      await leveldetails(list[i]["level"]);
     }
   }
 }
