@@ -15,12 +15,12 @@ async function printlist() {
   for (i = 0; i < list.length; i++) {
     allids.concat(list[i]["id"]);
   }
+  itemparam = parseInt(window.location.search.substring(1));
   console.log(itemparam);
   for (i = 0; i < list.length; i++) {
     // Level div
     const item = document.createElement("div");
     if (window.location.search != "" && window.location.search != "?") {
-      itemparam = parseInt(window.location.search.substring(1));
       console.log(list[i]["id"]);
       if (list[i]["id"] == itemparam) {
         item.className = "item selected";
