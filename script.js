@@ -11,33 +11,26 @@ async function fetchlist() {
 async function printlist() {
   const list = await fetchlist();
   const htmllist = document.getElementById("list");
-  allids = ["t"];
+  allids = [];
   for (i = 0; i < list.length; i++) {
-    allids.concat(list[i]["id"]);
+    allids.push(list[i]["id"]);
   }
-  console.log(allids.toString());
   itemparam = parseInt(window.location.search.substring(1));
-  console.log(itemparam);
   for (i = 0; i < list.length; i++) {
     // Level div
     const item = document.createElement("div");
     if (window.location.search != "" && window.location.search != "?") {
-      console.log(list[i]["id"]);
       if (list[i]["id"] == itemparam) {
         item.className = "item selected";
-        console.log("equals");
       } else if (allids.includes(itemparam)) {
         item.className = "item";
-        console.log("includes");
       } else if (i == 0) {
-        //window.location.search = "?" + list[0]["id"].toString();
+        window.location.search = "?" + list[0]["id"].toString();
         item.className = "item selected";
-        console.log("i is 0");
       }
     } else if (i == 0) {
-      //window.location.search = "?" + list[0]["id"].toString();
+      window.location.search = "?" + list[0]["id"].toString();
       item.className = "item selected";
-      console.log("is nothing, i is 0");
     }
     item.onclick = function() {
       if (document.getElementById(this.id).className != "item selected") {
