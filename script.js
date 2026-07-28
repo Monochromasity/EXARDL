@@ -16,13 +16,13 @@ async function printlist() {
     const item = document.createElement("div");
     if (window.location.search != "" && window.location.search != "?") {
       itemparam = parseInt(window.location.search.substring(1));
-      allvalues = [];
+      allids = [];
       for (j = 0; j < list.length; j++) {
-        allvalues.concat(Object.values(list[j]));
+        allids.concat(list[j]["id"]);
       }
       if (list[i]["id"] == itemparam) {
         item.className = "item selected";
-      } else if (allvalues.includes(itemparam)) {
+      } else if (allids.includes(itemparam)) {
         item.className = "item";
       } else if (i == 0) {
         window.location.search = "?" + list[0]["id"].toString();
