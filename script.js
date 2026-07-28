@@ -15,27 +15,27 @@ async function printlist() {
     // Level div
     const item = document.createElement("div");
     if (window.location.search != "" && window.location.search != "?") {
-      itemparam = parseInt(window.location.search.substring(1)) - 1;
-      if (i == itemparam) {
+      itemparam = parseInt(window.location.search.substring(1));
+      if (list[i]["id"] == itemparam) {
         item.className = "item selected";
-      } else if (itemparam >= 0 && itemparam < list.length) {
+      } else if (list[i].values().includes(itemparam)) {
         item.className = "item";
       } else if (i == 0) {
-        window.location.search = "?1";
+        window.location.search = "?" + list[0]["id"].toString();
         item.className = "item selected";
       }
     } else if (i == 0) {
-      window.location.search = "?1";
+      window.location.search = "?" + list[0]["id"].toString();
       item.className = "item selected";
     }
     item.onclick = function() {
       if (document.getElementById(this.id).className != "item selected") {
-        document.getElementById((parseInt(window.location.search.substring(1)) - 1).toString()).className = "item";
+        document.getElementById(window.location.search.substring(1)).className = "item";
         document.getElementById(this.id).className = "item selected";
-        window.location.search = "?" + (parseInt(this.id)+1).toString();
+        window.location.search = "?" + this.id;
       }
     };
-    item.id = i;
+    item.id = list[i]["id"].toString();
     // Level rank
     const rank = document.createElement("div");
     const ranktxt = document.createTextNode("#".concat(i+1));
