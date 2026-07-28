@@ -46,7 +46,7 @@ async function printlist() {
       window.location.search = "?" + list[0]["id"].toString();
       item.className = "item selected";
     }
-    item.onclick = function() {
+    item.onclick = async function() {
       if (document.getElementById(this.id).className != "item selected") {
         document.getElementById(window.location.search.substring(1)).className = "item";
         document.getElementById(this.id).className = "item selected";
