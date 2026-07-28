@@ -50,7 +50,7 @@ async function printlist() {
         document.getElementById(window.location.search.substring(1)).className = "item";
         this.className = "item selected";
         window.location.search = "?" + this.id;
-        await leveldetails(this.lastElementChild.textContent);
+        //await leveldetails(this.lastElementChild.textContent);
       }
     };
     item.id = list[i]["id"].toString();
