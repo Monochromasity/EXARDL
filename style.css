@@ -76,6 +76,10 @@ a.hlink:hover {
   padding: 10px;
   border-bottom: 2px solid #424242;
 }
+.cpvlabel {
+  font-size: 20px;
+  padding: 10px;
+}
 .lowerdiv {
   display: flex;
 }
@@ -85,7 +89,6 @@ a.hlink:hover {
 .recordsdiv {
   flex: 30%
 }
-.cpvlabel {
-  font-size: 20px;
-  padding: 10px;
+.video {
+  padding: 20px;
 }
