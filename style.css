@@ -79,6 +79,8 @@ a.hlink:hover {
 .cpvlabel {
   font-size: 20px;
   padding: 10px;
+  display: inline-block;
+  border-bottom: 2px solid #424242;
 }
 .lowerdiv {
   display: flex;
