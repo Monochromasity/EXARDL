@@ -54,7 +54,7 @@ async function leveldetails(inputlevel) {
   const video = document.createElement("iframe");
   video.width = "560";
   video.height = "315";
-  video.src = "https://www.youtube.com/embed/MM7zFyFqD8A";
+  video.src = "https://www.youtube.com/embed/" + inputlevel["video"];
   video.className = "video";
   recordsdiv.appendChild(video);
   lowerdiv.appendChild(detailsdiv);
