@@ -11,7 +11,7 @@ async function fetchlist() {
 async function printlist() {
   const list = await fetchlist();
   const htmllist = document.getElementById("list");
-  allids = [];
+  allids = ["t"];
   for (i = 0; i < list.length; i++) {
     allids.concat(list[i]["id"]);
   }
