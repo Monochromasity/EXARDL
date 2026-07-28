@@ -11,17 +11,17 @@ async function fetchlist() {
 async function printlist() {
   const list = await fetchlist();
   const htmllist = document.getElementById("list");
+  allids = [];
+  for (i = 0; i < list.length; i++) {
+    allids.concat(list[i]["id"]);
+  }
+  console.log(itemparam);
   for (i = 0; i < list.length; i++) {
     // Level div
     const item = document.createElement("div");
     if (window.location.search != "" && window.location.search != "?") {
       itemparam = parseInt(window.location.search.substring(1));
-      allids = [];
-      for (j = 0; j < list.length; j++) {
-        allids.concat(list[j]["id"]);
-      }
       console.log(list[i]["id"]);
-      console.log(itemparam);
       if (list[i]["id"] == itemparam) {
         item.className = "item selected";
         console.log("equals");
