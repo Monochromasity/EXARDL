@@ -84,10 +84,11 @@ a.hlink:hover {
   display: flex;
 }
 .detailsdiv {
-  flex: 70%
+  flex: 70%;
 }
 .recordsdiv {
-  flex: 30%
+  flex: 30%;
+  
 }
 .desc {
   padding: 10px;
@@ -98,4 +99,5 @@ a.hlink:hover {
   border-radius: 8px;
   background-color: #1a1a1a;
   font-size: 20px;
+  text-align: center;
 }
