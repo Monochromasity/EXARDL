@@ -9,7 +9,6 @@ async function fetchlist() {
     console.log(error);
   }
 }
-
 async function leveldetails(inputlevel) {
   // Get level div
   const leveldiv = document.getElementById("level");
@@ -50,6 +49,13 @@ async function leveldetails(inputlevel) {
   cpv.appendChild(verifier);
   cpv.className = "cpvlabel";
   detailsdiv.appendChild(cpv);
+  // Video iframe
+  // <iframe width="560" height="315" src="https://www.youtube.com/embed/MM7zFyFqD8A?si=JmUGHUIf9_PccYe0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  const video = document.createElement("iframe");
+  video.width = "560";
+  video.height = "315";
+  video.src = "https://www.youtube.com/embed/MM7zFyFqD8A";
+  recordsdiv.appendChild(video);
   lowerdiv.appendChild(detailsdiv);
   lowerdiv.appendChild(recordsdiv);
   leveldiv.appendChild(lowerdiv);
