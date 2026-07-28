@@ -66,6 +66,7 @@ a.hlink:hover {
   margin-right: 40px;
   margin-left: 20px;
   display: inline-block;
+  width: 2px;
 }
 .name {
   display: inline-block;
