@@ -39,6 +39,7 @@ async function leveldetails(inputlevel) {
   cpv.appendChild(publisher);
   cpv.appendChild(verifierlabel);
   cpv.appendChild(verifier);
+  cpv.className = "cpvlabel";
   leveldiv.appendChild(cpv);
 }
 
