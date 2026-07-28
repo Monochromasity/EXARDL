@@ -89,6 +89,9 @@ a.hlink:hover {
 .recordsdiv {
   flex: 30%
 }
+.desc {
+  padding: 10px;
+}
 .video {
   padding: 20px;
   border: none;
