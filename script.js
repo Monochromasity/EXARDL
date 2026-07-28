@@ -16,9 +16,13 @@ async function printlist() {
     const item = document.createElement("div");
     if (window.location.search != "" && window.location.search != "?") {
       itemparam = parseInt(window.location.search.substring(1));
+      allvalues = [];
+      for (j = 0; j < list.length; j++) {
+        allvalues.concat(list[j].values());
+      }
       if (list[i]["id"] == itemparam) {
         item.className = "item selected";
-      } else if (list[i].values().includes(itemparam)) {
+      } else if (allvalues.includes(itemparam)) {
         item.className = "item";
       } else if (i == 0) {
         window.location.search = "?" + list[0]["id"].toString();
