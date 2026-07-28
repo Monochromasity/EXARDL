@@ -18,7 +18,7 @@ async function printlist() {
       itemparam = parseInt(window.location.search.substring(1));
       allvalues = [];
       for (j = 0; j < list.length; j++) {
-        allvalues.concat(list[j].values());
+        allvalues.concat(Object.values(list[j]));
       }
       if (list[i]["id"] == itemparam) {
         item.className = "item selected";
