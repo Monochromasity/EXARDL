@@ -63,8 +63,7 @@ a.hlink:hover {
   background-color: #424242;
 }
 .rank {
-  margin-right: 40px;
-  margin-left: 20px;
+  margin: 0px 40px;
   display: inline-block;
   width: 2px;
 }
