@@ -69,3 +69,8 @@ a.hlink:hover {
 .name {
   display: inline-block;
 }
+.levelname {
+  font-size: 40px;
+  padding: 10px;
+  border-bottom: 2px solid #424242;
+}
