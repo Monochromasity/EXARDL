@@ -82,13 +82,13 @@ a.hlink:hover {
 }
 .lowerdiv {
   display: flex;
+  justify-content: center;
 }
 .detailsdiv {
-  flex: 70%;
+  flex: 66.54%;
 }
 .recordsdiv {
-  flex: 30%;
-  
+  flex: 33.46%;
 }
 .desc {
   padding: 10px;
@@ -100,4 +100,5 @@ a.hlink:hover {
   background-color: #1a1a1a;
   font-size: 20px;
   text-align: center;
+  height: 315px;
 }
