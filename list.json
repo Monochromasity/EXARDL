@@ -1,62 +1,107 @@
 [
   {
     "level": "CANONICALLY D",
-    "id": 2693
+    "id": 2693,
+    "creators": "OriginPlayz233",
+    "publisher": "OriginPlayz233",
+    "verifier": "OriginPlayz233"
   },
   {
     "level": "Sorrowful Stroll",
-    "id": 2606
+    "id": 2606,
+    "creators": "Oxanis",
+    "publisher": "Oxanis",
+    "verifier": "Oxanis"
   },
   {
     "level": "dry messages",
-    "id": 2372
+    "id": 2372,
+    "creators": "whitt",
+    "publisher": "whitt",
+    "verifier": "Monochromasity"
   },
   {
     "level": "Basilic",
-    "id": 2414
+    "id": 2414,
+    "creators": "Virek",
+    "publisher": "Virek",
+    "verifier": "OriginPlayz233"
   },
   {
     "level": "interface extrella",
-    "id": 1085
+    "id": 1085,
+    "creators": "MnM",
+    "publisher": "MnM",
+    "verifier": "whitt"
   },
   {
     "level": "empty da fumbledryer",
-    "id": 2660
+    "id": 2660,
+    "creators": "Monochromasity",
+    "publisher": "Monochromasity",
+    "verifier": "Monochromasity"
   },
   {
     "level": "glisten",
-    "id": 2664
+    "id": 2664,
+    "creators": "whitt",
+    "publisher": "OriginPlayz233",
+    "verifier": "OriginPlayz233"
   },
   {
     "level": "Chocobo Final Boss",
-    "id": 2199
+    "id": 2199,
+    "creators": "Driftaway",
+    "publisher": "Driftaway",
+    "verifier": "NiKkls"
   },
   {
     "level": "ynottulG",
-    "id": 2357
+    "id": 2357,
+    "creators": "Love",
+    "publisher": "Oxanis",
+    "verifier": "Oxanis"
   },
   {
     "level": "Cove",
-    "id": 1497
+    "id": 1497,
+    "creators": "Virek",
+    "publisher": "Virek",
+    "verifier": "Oxanis"
   },
   {
     "level": "Slop Challenge",
-    "id": 2096
+    "id": 2096,
+    "creators": "unnoise",
+    "publisher": "unnoise",
+    "verifier": "OriginPlayz233"
   },
   {
     "level": "lips ur mum",
-    "id": 2720
+    "id": 2720,
+    "creators": "OriginPlayz233",
+    "publisher": "OriginPlayz233",
+    "verifier": "OriginPlayz233"
   },
   {
     "level": "Element 8 O",
-    "id": 1909
+    "id": 1909,
+    "creators": "ZacDaGamer",
+    "publisher": "ZacDaGamer",
+    "verifier": "whitt"
   },
   {
     "level": "wet messages",
-    "id": 2557
+    "id": 2557,
+    "creators": "whitt",
+    "publisher": "whitt",
+    "verifier": "NiKkls"
   },
   {
     "level": "new top 1",
-    "id": 2468
+    "id": 2468,
+    "creators": "whitt",
+    "publisher": "whitt",
+    "verifier": "Monochromasity"
   }
 ]
