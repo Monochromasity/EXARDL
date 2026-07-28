@@ -10,6 +10,18 @@ async function fetchlist() {
   }
 }
 
+async function leveldetails() {
+  // Get level div
+  const leveldiv = document.getElementById("level");
+  // Level name in level div
+  const levelname = document.createElement("div");
+  const levelnametxt = document.createTextNode(list[i]["level"]);
+  levelname.appendChild(levelnametxt);
+  levelname.className = "levelname";
+  leveldiv.appendChild(levelname);
+  
+}
+
 async function printlist() {
   const list = await fetchlist();
   const htmllist = document.getElementById("list");
@@ -39,6 +51,7 @@ async function printlist() {
         document.getElementById(window.location.search.substring(1)).className = "item";
         document.getElementById(this.id).className = "item selected";
         window.location.search = "?" + this.id;
+        await leveldetails();
       }
     };
     item.id = list[i]["id"].toString();
@@ -55,6 +68,10 @@ async function printlist() {
     name.className = "name";
     item.appendChild(name);
     htmllist.appendChild(item);
+    // If this level is selected
+    if (item.className == "item selected") {
+      await leveldetails();
+    }
   }
 }
 
