@@ -29,12 +29,12 @@ async function printlist() {
         item.className = "item";
         console.log("includes");
       } else if (i == 0) {
-        window.location.search = "?" + list[0]["id"].toString();
+        //window.location.search = "?" + list[0]["id"].toString();
         item.className = "item selected";
         console.log("i is 0");
       }
     } else if (i == 0) {
-      window.location.search = "?" + list[0]["id"].toString();
+      //window.location.search = "?" + list[0]["id"].toString();
       item.className = "item selected";
       console.log("is nothing, i is 0");
     }
