@@ -45,6 +45,15 @@
     "description": "Former impossible demon, known for its difficult ship part at the drop. It is not a well received level."
   },
   {
+    "level": "Chocobo Final Boss",
+    "id": 2199,
+    "creators": "Driftaway",
+    "publisher": "Driftaway",
+    "verifier": "NiKkls",
+    "video": "6n7--P5RCNg",
+    "description": "A robot-only extreme demon by Driftaway. It is currently the hardest single-gamemode level on the list."
+  },
+  {
     "level": "empty da fumbledryer",
     "id": 2660,
     "creators": "Monochromasity",
@@ -60,15 +69,6 @@
     "publisher": "OriginPlayz233",
     "verifier": "OriginPlayz233",
     "video": "_c6wM_QwOLQ"
-  },
-  {
-    "level": "Chocobo Final Boss",
-    "id": 2199,
-    "creators": "Driftaway",
-    "publisher": "Driftaway",
-    "verifier": "NiKkls",
-    "video": "6n7--P5RCNg",
-    "description": "A robot-only extreme demon by Driftaway. It is currently the hardest single-gamemode level on the list."
   },
   {
     "level": "ynottulG",
@@ -112,6 +112,13 @@
     "video": "6grdmf04gc4"
   },
   {
+    "level": "Journeys end",
+    "id": 2569,
+    "creators": "StartingXY",
+    "publisher": "StartingXY",
+    "verifier": "StartingXY",
+  },
+  {
     "level": "wet messages",
     "id": 2557,
     "creators": "whitt",
@@ -120,11 +127,81 @@
     "video": "M6wgjyHMC_U"
   },
   {
+    "level": "ITS TIME",
+    "id": 1992,
+    "creators": "yomi",
+    "publisher": "yomi",
+    "verifier": "yomi"
+  },
+  {
     "level": "new top 1",
     "id": 2468,
     "creators": "whitt",
     "publisher": "whitt",
     "verifier": "Monochromasity",
     "video": "zqfrhiW2kFU"
+  },
+  {
+    "level": "Trap Machine",
+    "id": 1961,
+    "creators": "iXRC",
+    "publisher": "iXRC",
+    "verifier": "Oxanis"
+  },
+  {
+    "level": "Wet In",
+    "id": 2610,
+    "creators": "Love",
+    "publisher": "NiKkls",
+    "verifier": "NiKkls"
+  },
+  {
+    "level": "Iconic",
+    "id": 2208,
+    "creators": "Driftaway",
+    "publisher": "Driftaway",
+    "verifier": "NiKkls"
+  },
+  {
+    "level": "Silent Stardust",
+    "id": 2724,
+    "creators": "EnD",
+    "publisher": "StartingXY",
+    "verifier": "StartingXY"
+  },
+  {
+    "level": "pride",
+    "id": 2465,
+    "creators": "whitt",
+    "publisher": "whitt",
+    "verifier": "NiKkls"
+  },
+  {
+    "level": "Defect Cracktory XX",
+    "id": 2377,
+    "creators": "kubus and whitt",
+    "publisher": "whitt",
+    "verifier": "whitt"
+  },
+  {
+    "level": "Love Dada",
+    "id": 1316,
+    "creators": "DarkX",
+    "publisher": "DarkX",
+    "verifier": "whitt"
+  },
+  {
+    "level": "Shotgun Abyss",
+    "id": 1023,
+    "creators": "MACE",
+    "publisher": "MACE",
+    "verifier": "Monochromasity"
+  },
+  {
+    "level": "Haste IV",
+    "id": 2225,
+    "creators": "StartingXY",
+    "publisher": "StartingXY",
+    "verifier": "StartingXY"
   }
 ]
